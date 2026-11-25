@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+actor Student
+actor Admin
+rectangle "Student Management System" {
+  usecase "Login" as UC_Login
+  usecase "View Profile" as UC_Profile
+  usecase "View Courses" as UC_Courses
+  usecase "Enroll in Course" as UC_Enroll
+  usecase "Manage Students" as UC_Students
+  usecase "Manage Courses" as UC_ManageCourses
+  usecase "View Reports" as UC_Reports
+}
+Student --> UC_Login
+Student --> UC_Profile
+Student --> UC_Courses
+Student --> UC_Enroll
+Admin --> UC_Login
+Admin --> UC_Students
+Admin --> UC_ManageCourses
+Admin --> UC_Reports
+@enduml
