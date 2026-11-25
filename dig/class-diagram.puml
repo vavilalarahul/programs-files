@@ -1,0 +1,33 @@
+@startuml
+class User {
+  - userId: int
+  - name: String
+  - email: String
+  - passwordHash: String
+  + login(): boolean
+}
+class Student {
+  - studentId: int
+  - department: String
+  - year: int
+  + viewProfile(): void
+}
+class Admin {
+  + manageStudents(): void
+  + manageCourses(): void
+}
+class Course {
+  - courseId: int
+  - title: String
+  - credits: int
+}
+class Enrollment {
+  - enrollmentId: int
+  - enrolledAt: Date
+  - status: String
+}
+User <|-- Student
+User <|-- Admin
+Student "1" -- "0..*" Enrollment
+Course "1" -- "0..*" Enrollment
+@enduml
