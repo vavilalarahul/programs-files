@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+component "Student Web UI" as StudentUI
+component "Admin Web UI" as AdminUI
+component "Authentication Service" as Auth
+component "Student Management Service" as StudentSvc
+component "Course Management Service" as CourseSvc
+database "Student Database" as DB
+StudentUI ..> Auth : uses
+AdminUI ..> Auth : uses
+Auth --> StudentSvc : authenticated requests
+StudentSvc ..> DB : reads / writes
+StudentSvc --> CourseSvc : course operations
+@enduml
