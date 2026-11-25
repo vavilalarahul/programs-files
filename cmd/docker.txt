@@ -1,0 +1,179 @@
+DOCKER + DOCKER COMPOSE — SE LAB QUICK NOTES
+Based on the SE merged PDF. Run commands in the project folder.
+Use normal hyphens and quotes exactly as shown.
+
+A) 15 DOCKER COMMANDS
+1. docker --version
+2. docker info
+3. docker pull nginx
+4. docker images
+5. docker build -t myapp .
+6. docker run -d --name web -p 8080:80 nginx
+7. docker ps
+8. docker ps -a
+9. docker logs web
+10. docker exec -it web sh
+11. docker stop web
+12. docker start web
+13. docker restart web
+14. docker rm -f web
+15. docker rmi nginx
+
+B) REDIS DOCKERFILE PRACTICAL (EXP 6)
+Folder: C:\DockerProjects\Redis
+Git Bash:
+mkdir -p /c/DockerProjects/Redis
+cd /c/DockerProjects/Redis
+
+Create a file named Dockerfile (no extension):
+FROM redis:latest
+CMD ["redis-server"]
+
+Build and run:
+docker build -t redisnew .
+docker run --name myredisnew -d redisnew
+docker ps
+docker stop myredisnew
+docker login
+docker commit CONTAINER_ID YOUR_DOCKERHUB_USERNAME/redis1
+docker images
+docker push YOUR_DOCKERHUB_USERNAME/redis1
+docker rm myredisnew
+docker rmi YOUR_DOCKERHUB_USERNAME/redis1
+docker logout
+docker pull YOUR_DOCKERHUB_USERNAME/redis1
+docker run --name myredis -d YOUR_DOCKERHUB_USERNAME/redis1
+docker exec -it myredis redis-cli
+
+Redis CLI (one command per line):
+SET name Abcdef
+GET name
+exit
+
+docker stop myredis
+docker rm myredis
+
+B2) BASIC COMPOSE YAML (USE THIS FOR COMPOSE COMMAND PRACTICE)
+Create a folder, then save this as compose.yaml inside it:
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+
+Folder: compose-lab/compose.yaml
+Run these from the folder containing compose.yaml:
+docker compose up -d
+docker compose ps
+docker compose logs
+docker compose exec web sh
+docker compose stop
+docker compose start
+docker compose restart
+docker compose down
+Open: http://localhost:8080
+
+C) 15 DOCKER COMPOSE COMMANDS
+1. docker compose version
+2. docker compose up
+3. docker compose up -d
+4. docker compose down
+5. docker compose ps
+6. docker compose images
+7. docker compose build
+8. docker compose pull
+9. docker compose start
+10. docker compose stop
+11. docker compose restart
+12. docker compose logs
+13. docker compose logs -f
+14. docker compose exec web sh
+15. docker compose down -v
+
+Useful extras:
+docker compose up --build
+docker compose config
+docker compose scale web=2
+
+D) COMPOSE YAML (NGINX + POSTGRES + REDIS + NETWORK + VOLUME)
+Create folder compose-lab and save as compose.yaml:
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+      - redis
+    networks:
+      - app-net
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: demo
+      POSTGRES_PASSWORD: demo
+      POSTGRES_DB: demo_db
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - app-net
+
+  redis:
+    image: redis:alpine
+    networks:
+      - app-net
+
+networks:
+  app-net:
+
+volumes:
+  db-data:
+
+Run/check/stop:
+docker compose up -d
+docker compose ps
+docker compose logs
+docker compose down
+docker compose up -d
+docker compose down -v   (also deletes db-data)
+Open: http://localhost:8080
+
+E) WORDPRESS + MYSQL YAML (ALTERNATE EXERCISE)
+Save as docker-compose.yml:
+
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - "8081:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+Run: docker compose up -d
+Open: http://localhost:8081
+Stop: docker compose down
+
+EXAM FLOW
+Dockerfile: create folder > Dockerfile > docker build -t redisnew . >
+docker run --name myredisnew -d redisnew > docker ps > stop > rm.
+Compose: create folder > compose.yaml > docker compose up -d >
+docker compose ps > localhost:8080 > docker compose down.
+
+-d = background mode; -p HOST:CONTAINER; depends_on controls startup order,
+not readiness. Demo credentials are for lab use only.
