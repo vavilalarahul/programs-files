@@ -1,0 +1,1238 @@
+{
+  "_type": "Project",
+  "_id": "/WecBKnoSNeMyycYhZ74dA==",
+  "name": "Student Management System - Class Diagram",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "nWeqnVXuQ9Ow3C8aSkvIMg==",
+      "_parent": {
+        "$ref": "/WecBKnoSNeMyycYhZ74dA=="
+      },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "UMLActor",
+          "_id": "AAAAAAAAAAAAAAAAAAAABA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Student"
+        },
+        {
+          "_type": "UMLActor",
+          "_id": "AAAAAAAAAAAAAAAAAAAACA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Admin"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAADA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Login"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAEA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "View Profile"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAFA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Register for Course"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAGA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "View Enrolled Courses"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAHA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Manage Students"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAIA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Manage Courses"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAAAAAAAAAAAAAAAAJQ==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Student",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "attributes": [],
+          "operations": []
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAAAAAAAAAAAAAAAALQ==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Admin",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "attributes": [],
+          "operations": []
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAAAAAAAAAAAAAAAANQ==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Course",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "attributes": [],
+          "operations": []
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "AAAAAAAAAAAAAAAAAAAAPQ==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "enrolls in",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAJQ=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAANQ=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAPw==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "manages",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAALQ=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAJQ=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAAQg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Student Web UI",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAARg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Admin Web UI",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAASg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Authentication Service",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAATg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Student Management Service",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAAUg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Course Management Service",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAAVg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Student Database",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAWg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAQg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAASg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAXA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAARg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAASg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAXg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAQg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAATg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAYA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAARg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAATg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAYg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAARg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAUg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAZA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAASg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAVg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAZg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAATg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAVg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAaA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAUg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAVg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLLifeline",
+          "_id": "AAAAAAAAAAAAAAAAAAAAaw==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Student",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "selector": "",
+          "isMultiInstance": false
+        },
+        {
+          "_type": "UMLLifeline",
+          "_id": "AAAAAAAAAAAAAAAAAAAAbg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Login Page",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "selector": "",
+          "isMultiInstance": false
+        },
+        {
+          "_type": "UMLLifeline",
+          "_id": "AAAAAAAAAAAAAAAAAAAAcQ==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Auth Service",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "selector": "",
+          "isMultiInstance": false
+        },
+        {
+          "_type": "UMLLifeline",
+          "_id": "AAAAAAAAAAAAAAAAAAAAdA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Student DB",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "selector": "",
+          "isMultiInstance": false
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAdw==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Enter credentials",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAaw=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAeQ==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "submitCredentials()",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAew==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "findStudent()",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAdA=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAfQ==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "student record",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAdA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAfw==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "login success",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAgQ==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "show dashboard",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAaw=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "7F/LfzK1QbaucFuPnMK9Fg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAABA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAADA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "PNzRb8cDS1SovBWlYBjYeg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAABA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAEA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "4y5L5wiCT4yvM8sHWZhX6A==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAABA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAFA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "aMQ2Lm6sRWG6xA9C7jHDcg==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAABA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAGA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "wwXNW2EaTqGM0uYnMnFvAw==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAACA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAADA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "JwBXnRapQJaMPRwj/7PnWA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAACA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAHA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "OE5dCvCmRUWZFBdA7xPLzA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAACA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAIA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "AAAAAAAAAAAAAAAAAAAAJA==",
+          "_parent": {
+            "$ref": "nWeqnVXuQ9Ow3C8aSkvIMg=="
+          },
+          "name": "Class Diagram",
+          "visible": true,
+          "defaultDiagram": true,
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAJg==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAJA=="
+              },
+              "visible": true,
+              "enabled": true,
+              "lineColor": "#000000",
+              "fillColor": "#ffffff",
+              "fontColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "containerChangeable": true,
+              "containerExtending": false,
+              "left": 70,
+              "top": 100,
+              "width": 210,
+              "height": 130,
+              "autoResize": true,
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAJQ=="
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAAJw==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAJg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAJQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAAKA==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAAJw=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;1",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 78,
+                      "top": 108,
+                      "width": 194,
+                      "height": 20,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "Student",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 74,
+                  "top": 104,
+                  "width": 202,
+                  "height": 26,
+                  "autoResize": true,
+                  "stereotypeLabel": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAKA=="
+                  },
+                  "nameLabel": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAKA=="
+                  }
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAAKQ==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAJg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAJQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAAKw==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAAKQ=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;0",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 80,
+                      "top": 135,
+                      "width": 190,
+                      "height": 45,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "studentId : int\nname : String\nemail : String",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 75,
+                  "top": 132,
+                  "width": 200,
+                  "height": 45,
+                  "autoResize": true
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAAKg==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAJg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAJQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAALA==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAAKg=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;0",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 80,
+                      "top": 180,
+                      "width": 190,
+                      "height": 45,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "login()\nviewProfile()\nregisterForCourse()",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 75,
+                  "top": 178,
+                  "width": 200,
+                  "height": 45,
+                  "autoResize": true
+                }
+              ],
+              "nameLabel": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAKA=="
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAAAAAAAAAAAAAAAAALg==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAJA=="
+              },
+              "visible": true,
+              "enabled": true,
+              "lineColor": "#000000",
+              "fillColor": "#ffffff",
+              "fontColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "containerChangeable": true,
+              "containerExtending": false,
+              "left": 360,
+              "top": 100,
+              "width": 210,
+              "height": 130,
+              "autoResize": true,
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAALQ=="
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAALw==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAALg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAALQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAAMA==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAALw=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;1",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 368,
+                      "top": 108,
+                      "width": 194,
+                      "height": 20,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "Admin",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 364,
+                  "top": 104,
+                  "width": 202,
+                  "height": 26,
+                  "autoResize": true,
+                  "stereotypeLabel": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAMA=="
+                  },
+                  "nameLabel": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAMA=="
+                  }
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAAMQ==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAALg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAALQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAAMw==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAAMQ=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;0",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 370,
+                      "top": 135,
+                      "width": 190,
+                      "height": 45,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "adminId : int\nname : String",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 365,
+                  "top": 132,
+                  "width": 200,
+                  "height": 45,
+                  "autoResize": true
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAAMg==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAALg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAALQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAANA==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAAMg=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;0",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 370,
+                      "top": 180,
+                      "width": 190,
+                      "height": 45,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "login()\naddStudent()\nremoveStudent()\naddCourse()",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 365,
+                  "top": 178,
+                  "width": 200,
+                  "height": 45,
+                  "autoResize": true
+                }
+              ],
+              "nameLabel": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAMA=="
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "AAAAAAAAAAAAAAAAAAAANg==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAJA=="
+              },
+              "visible": true,
+              "enabled": true,
+              "lineColor": "#000000",
+              "fillColor": "#ffffff",
+              "fontColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "containerChangeable": true,
+              "containerExtending": false,
+              "left": 650,
+              "top": 100,
+              "width": 210,
+              "height": 130,
+              "autoResize": true,
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAANQ=="
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAANw==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAANg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAANQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAAOA==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAANw=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;1",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 658,
+                      "top": 108,
+                      "width": 194,
+                      "height": 20,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "Course",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 654,
+                  "top": 104,
+                  "width": 202,
+                  "height": 26,
+                  "autoResize": true,
+                  "stereotypeLabel": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAOA=="
+                  },
+                  "nameLabel": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAAOA=="
+                  }
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAAOQ==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAANg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAANQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAAOw==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAAOQ=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;0",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 660,
+                      "top": 135,
+                      "width": 190,
+                      "height": 45,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "courseId : int\ncourseName : String\ncredits : int",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 655,
+                  "top": 132,
+                  "width": 200,
+                  "height": 45,
+                  "autoResize": true
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "AAAAAAAAAAAAAAAAAAAAOg==",
+                  "_parent": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAANg=="
+                  },
+                  "model": {
+                    "$ref": "AAAAAAAAAAAAAAAAAAAANQ=="
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "AAAAAAAAAAAAAAAAAAAAPA==",
+                      "_parent": {
+                        "$ref": "AAAAAAAAAAAAAAAAAAAAOg=="
+                      },
+                      "visible": true,
+                      "enabled": true,
+                      "lineColor": "#000000",
+                      "fillColor": "#ffffff",
+                      "fontColor": "#000000",
+                      "font": "Arial;13;0",
+                      "showShadow": true,
+                      "containerChangeable": false,
+                      "containerExtending": false,
+                      "left": 660,
+                      "top": 180,
+                      "width": 190,
+                      "height": 45,
+                      "autoResize": true,
+                      "underline": false,
+                      "text": "getCourseDetails()",
+                      "horizontalAlignment": 2,
+                      "verticalAlignment": 5,
+                      "wordWrap": false
+                    }
+                  ],
+                  "visible": true,
+                  "enabled": true,
+                  "lineColor": "#000000",
+                  "fillColor": "#ffffff",
+                  "fontColor": "#000000",
+                  "font": "Arial;13;0",
+                  "showShadow": true,
+                  "containerChangeable": false,
+                  "containerExtending": false,
+                  "left": 655,
+                  "top": 178,
+                  "width": 200,
+                  "height": 45,
+                  "autoResize": true
+                }
+              ],
+              "nameLabel": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAOA=="
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAPg==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAJA=="
+              },
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAPQ=="
+              },
+              "tail": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAJg=="
+              },
+              "head": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAANg=="
+              },
+              "lineColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "points": "280:165;360:165",
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAQA==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAJA=="
+              },
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAPw=="
+              },
+              "tail": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAALg=="
+              },
+              "head": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAJg=="
+              },
+              "lineColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "points": "280:165;360:165",
+              "visible": true,
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

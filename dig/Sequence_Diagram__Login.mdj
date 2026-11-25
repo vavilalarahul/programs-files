@@ -1,0 +1,865 @@
+{
+  "_type": "Project",
+  "_id": "41vIWPuwSPi/12/Nu+YFpw==",
+  "name": "Student Management System - Sequence Diagram - Login",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AbG74Oc+QCSJF9plISs0ww==",
+      "_parent": {
+        "$ref": "41vIWPuwSPi/12/Nu+YFpw=="
+      },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "UMLActor",
+          "_id": "AAAAAAAAAAAAAAAAAAAABA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Student"
+        },
+        {
+          "_type": "UMLActor",
+          "_id": "AAAAAAAAAAAAAAAAAAAACA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Admin"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAADA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Login"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAEA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "View Profile"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAFA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Register for Course"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAGA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "View Enrolled Courses"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAHA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Manage Students"
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "AAAAAAAAAAAAAAAAAAAAIA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Manage Courses"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAAAAAAAAAAAAAAAAJQ==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Student",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "attributes": [],
+          "operations": []
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAAAAAAAAAAAAAAAALQ==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Admin",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "attributes": [],
+          "operations": []
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "AAAAAAAAAAAAAAAAAAAANQ==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Course",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "attributes": [],
+          "operations": []
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "AAAAAAAAAAAAAAAAAAAAPQ==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "enrolls in",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAJQ=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAANQ=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAPw==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "manages",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAALQ=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAJQ=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAAQg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Student Web UI",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAARg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Admin Web UI",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAASg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Authentication Service",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAATg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Student Management Service",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAAUg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Course Management Service",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLComponent",
+          "_id": "AAAAAAAAAAAAAAAAAAAAVg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Student Database",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAWg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAQg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAASg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAXA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAARg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAASg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAXg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAQg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAATg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAYA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAARg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAATg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAYg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAARg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAUg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAZA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAASg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAVg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAZg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAATg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAVg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "AAAAAAAAAAAAAAAAAAAAaA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAUg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAVg=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLLifeline",
+          "_id": "AAAAAAAAAAAAAAAAAAAAaw==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Student",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "selector": "",
+          "isMultiInstance": false
+        },
+        {
+          "_type": "UMLLifeline",
+          "_id": "AAAAAAAAAAAAAAAAAAAAbg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Login Page",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "selector": "",
+          "isMultiInstance": false
+        },
+        {
+          "_type": "UMLLifeline",
+          "_id": "AAAAAAAAAAAAAAAAAAAAcQ==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Auth Service",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "selector": "",
+          "isMultiInstance": false
+        },
+        {
+          "_type": "UMLLifeline",
+          "_id": "AAAAAAAAAAAAAAAAAAAAdA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Student DB",
+          "visibility": "public",
+          "isAbstract": false,
+          "isFinalSpecialization": false,
+          "isLeaf": false,
+          "isActive": false,
+          "selector": "",
+          "isMultiInstance": false
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAdw==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Enter credentials",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAaw=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAeQ==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "submitCredentials()",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAew==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "findStudent()",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAdA=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAfQ==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "student record",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAdA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAfw==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "login success",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "AAAAAAAAAAAAAAAAAAAAgQ==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "show dashboard",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAaw=="
+          },
+          "messageSort": "synchCall",
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "7F/LfzK1QbaucFuPnMK9Fg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAABA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAADA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "PNzRb8cDS1SovBWlYBjYeg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAABA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAEA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "4y5L5wiCT4yvM8sHWZhX6A==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAABA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAFA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "aMQ2Lm6sRWG6xA9C7jHDcg==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAABA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAGA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "wwXNW2EaTqGM0uYnMnFvAw==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAACA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAADA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "JwBXnRapQJaMPRwj/7PnWA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAACA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAHA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "OE5dCvCmRUWZFBdA7xPLzA==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "",
+          "source": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAACA=="
+          },
+          "target": {
+            "$ref": "AAAAAAAAAAAAAAAAAAAAIA=="
+          },
+          "visibility": "public"
+        },
+        {
+          "_type": "UMLSequenceDiagram",
+          "_id": "AAAAAAAAAAAAAAAAAAAAag==",
+          "_parent": {
+            "$ref": "AbG74Oc+QCSJF9plISs0ww=="
+          },
+          "name": "Sequence Diagram - Login",
+          "visible": true,
+          "defaultDiagram": true,
+          "ownedViews": [
+            {
+              "_type": "UMLLifelineView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAbA==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "visible": true,
+              "enabled": true,
+              "lineColor": "#000000",
+              "fillColor": "#ffffff",
+              "fontColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "containerChangeable": true,
+              "containerExtending": false,
+              "left": 80,
+              "top": 70,
+              "width": 120,
+              "height": 390,
+              "autoResize": true,
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAaw=="
+              },
+              "text": "Student",
+              "nameLabel": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAbQ=="
+              }
+            },
+            {
+              "_type": "UMLLifelineView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAbw==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "visible": true,
+              "enabled": true,
+              "lineColor": "#000000",
+              "fillColor": "#ffffff",
+              "fontColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "containerChangeable": true,
+              "containerExtending": false,
+              "left": 260,
+              "top": 70,
+              "width": 120,
+              "height": 390,
+              "autoResize": true,
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAbg=="
+              },
+              "text": "Login Page",
+              "nameLabel": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAcA=="
+              }
+            },
+            {
+              "_type": "UMLLifelineView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAcg==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "visible": true,
+              "enabled": true,
+              "lineColor": "#000000",
+              "fillColor": "#ffffff",
+              "fontColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "containerChangeable": true,
+              "containerExtending": false,
+              "left": 440,
+              "top": 70,
+              "width": 120,
+              "height": 390,
+              "autoResize": true,
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAcQ=="
+              },
+              "text": "Auth Service",
+              "nameLabel": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAcw=="
+              }
+            },
+            {
+              "_type": "UMLLifelineView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAdQ==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "visible": true,
+              "enabled": true,
+              "lineColor": "#000000",
+              "fillColor": "#ffffff",
+              "fontColor": "#000000",
+              "font": "Arial;13;0",
+              "showShadow": true,
+              "containerChangeable": true,
+              "containerExtending": false,
+              "left": 620,
+              "top": 70,
+              "width": 120,
+              "height": 390,
+              "autoResize": true,
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAdA=="
+              },
+              "text": "Student DB",
+              "nameLabel": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAdg=="
+              }
+            },
+            {
+              "_type": "UMLMessageView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAeA==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAdw=="
+              },
+              "tail": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAbA=="
+              },
+              "head": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAbw=="
+              },
+              "points": "140:130;320:130",
+              "lineColor": "#000000",
+              "font": "Arial;13;0",
+              "visible": true,
+              "enabled": true,
+              "text": "Enter credentials"
+            },
+            {
+              "_type": "UMLMessageView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAeg==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAeQ=="
+              },
+              "tail": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAbw=="
+              },
+              "head": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAcg=="
+              },
+              "points": "320:175;500:175",
+              "lineColor": "#000000",
+              "font": "Arial;13;0",
+              "visible": true,
+              "enabled": true,
+              "text": "submitCredentials()"
+            },
+            {
+              "_type": "UMLMessageView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAfA==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAew=="
+              },
+              "tail": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAcg=="
+              },
+              "head": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAdQ=="
+              },
+              "points": "500:220;680:220",
+              "lineColor": "#000000",
+              "font": "Arial;13;0",
+              "visible": true,
+              "enabled": true,
+              "text": "findStudent()"
+            },
+            {
+              "_type": "UMLMessageView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAfg==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAfQ=="
+              },
+              "tail": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAdQ=="
+              },
+              "head": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAcg=="
+              },
+              "points": "680:265;500:265",
+              "lineColor": "#000000",
+              "font": "Arial;13;0",
+              "visible": true,
+              "enabled": true,
+              "text": "student record"
+            },
+            {
+              "_type": "UMLMessageView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAgA==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAfw=="
+              },
+              "tail": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAcg=="
+              },
+              "head": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAbw=="
+              },
+              "points": "500:310;320:310",
+              "lineColor": "#000000",
+              "font": "Arial;13;0",
+              "visible": true,
+              "enabled": true,
+              "text": "login success"
+            },
+            {
+              "_type": "UMLMessageView",
+              "_id": "AAAAAAAAAAAAAAAAAAAAgg==",
+              "_parent": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAag=="
+              },
+              "model": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAgQ=="
+              },
+              "tail": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAbw=="
+              },
+              "head": {
+                "$ref": "AAAAAAAAAAAAAAAAAAAAbA=="
+              },
+              "points": "320:355;140:355",
+              "lineColor": "#000000",
+              "font": "Arial;13;0",
+              "visible": true,
+              "enabled": true,
+              "text": "show dashboard"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
